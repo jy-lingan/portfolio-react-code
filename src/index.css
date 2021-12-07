@@ -3,11 +3,66 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
-  -webkit-font-smoothing: antialiased;
+  -webkit-font-smoothing : antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  background: rgb(0, 24, 41);
+  background: -moz-linear-gradient(90deg, rgba(0, 24, 41, 1) 0%, rgba(41, 126, 166, 1) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(0, 24, 41, 1) 0%, rgba(41, 126, 166, 1) 100%);
+  background: linear-gradient(90deg, rgba(0, 24, 41, 1) 0%, rgba(41, 126, 166, 1) 100%);
+  filter    : progid:DXImageTransform.Microsoft.gradient(startColorstr="#001829", endColorstr="#297ea6", GradientType=1);
+
+  background-size: 400% 400%;
+  animation      : fondo 10s ease infinite;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.footer {
+  margin-top: 1rem;
+  padding   : 1rem;
+  position  : fixed;
+  bottom    : 0;
+  left      : 0;
+  width     : 100%;
+  text-align: center;
+  font-size : 1.3rem;
+  color     : aliceblue;
+}
+
+.footer a {
+  color          : aliceblue;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+  color          : #0066FF;
+}
+
+.nav-link:hover {
+  background-color: #0066FF;
+  border-radius   : 10px;
+}
+
+.navbar-nav {
+  text-align: center;
+  margin: auto;
+}
+
+@keyframes fondo {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
 }
